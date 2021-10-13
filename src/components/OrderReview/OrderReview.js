@@ -6,10 +6,12 @@ import Product from '../Product/Product';
 import ReviewItem from '../reviewItem/ReviewItem';
 import { clearTheCart, removeFromDb } from '../../utilities/fakedb';
 import { useHistory } from 'react-router';
+
 const OrderReview = () => {
-    const [products] = UseProducts();
+    const [products, setProducts] = UseProducts();
     const [cart, setCart] = useCart(products);
     const history = useHistory();
+    
     const handleRemove = key => {
         const newCart = cart.filter(product => product.key !== key);
         setCart(newCart);

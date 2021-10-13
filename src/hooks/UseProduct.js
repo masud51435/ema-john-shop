@@ -10,7 +10,7 @@ const UseProducts = () => {
       .then(res => res.json())
       .then(data => setProducts(data));
   }, []);
-  return [products];
+  return [products, setProducts];
 
 };
 

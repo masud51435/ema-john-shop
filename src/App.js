@@ -12,8 +12,8 @@ import PlaceOrder from './components/placeOrder/PlaceOrder';
 function App() {
   return (
     <div>
-      <Header></Header>
       <Router>
+      <Header></Header>
         <Switch>
           <Route exact path ="/">
            <Shop></Shop>
